@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите свое имя, пожалуйста ");
+        var  userName = in.nextLine();
+        System.out.println("Привет, " + userName);
+        StringBuffer strBuffer = new StringBuffer(userName);
+        strBuffer.reverse();
+        System.out.println("А вот и ваше имя наоборот "+ strBuffer.toString());
+    }
+}
